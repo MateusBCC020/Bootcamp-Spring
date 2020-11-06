@@ -1,4 +1,4 @@
-package org.mateusribeiro.blogPessoal;
+package org.mateus.blogPessoal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
