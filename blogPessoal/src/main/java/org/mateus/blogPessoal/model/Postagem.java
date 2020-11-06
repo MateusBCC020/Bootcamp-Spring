@@ -1,4 +1,4 @@
-package org.mateusribeiro.blogPessoal.model;
+package org.mateus.blogPessoal.model;
 
 import java.util.Date;
 
@@ -7,6 +7,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import javax.validation.constraints.Size;
 
 import com.sun.istack.NotNull;
 
@@ -19,12 +22,19 @@ public class Postagem {
 	private long id;
 	
 	@NotNull
+	@Size(min = 5, max = 255)
 	private String titulo;
 	
+	@NotNull
+	@Size(min = 5, max = 4095)
 	private String texto;
 	
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date data = new java.sql.Date(System.currentTimeMillis());
 	
+	
+	
+	//Getters and Setters
 	public long getId() {
 		return id;
 	}
@@ -57,4 +67,5 @@ public class Postagem {
 		this.data = data;
 	}
 	
+
 }
