@@ -31,6 +31,14 @@ public class Aula {
 	@Size(min = 5, max = 4096)
 	private String texto;
 	
+	public String getTexto() {
+		return texto;
+	}
+
+	public void setTexto(String texto) {
+		this.texto = texto;
+	}
+
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date data = new java.sql.Date(System.currentTimeMillis());
 
