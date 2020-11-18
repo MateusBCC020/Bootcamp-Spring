@@ -1,6 +1,7 @@
 package org.mateus.blogPessoal.model;
 
 import javax.persistence.Entity;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -17,15 +18,15 @@ public class Usuario {
 	private long id;
 	
 	@NotNull
-	@Size(min = 3, max = 255)
+	@Size(min = 3, max = 100)
 	private String nome;
 	
 	@NotNull
-	@Size(min = 8, max = 255)
+	@Size(min = 5, max = 100)
 	private String usuario;
 	
 	@NotNull
-	@Size(min = 8, max = 16)
+	@Size(min = 8, max = 100)
 	private String senha;
 
 	public long getId() {
@@ -59,6 +60,5 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	
 	
 }
