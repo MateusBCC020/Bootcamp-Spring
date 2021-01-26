@@ -1,10 +1,10 @@
-package org.mateus.blogPessoal;
+package br.com.mateusRibeiro.minhaCarteira;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BlogPessoalApplicationTests {
+class MinhaCarteiraApplicationTests {
 
 	@Test
 	void contextLoads() {

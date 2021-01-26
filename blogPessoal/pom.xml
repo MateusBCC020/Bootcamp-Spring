@@ -8,7 +8,7 @@
 		<version>2.3.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>org.mateusribeiro</groupId>
+	<groupId>org.mateus</groupId>
 	<artifactId>blogPessoal</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>blogPessoal</name>
@@ -22,6 +22,16 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>       
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.6.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
